@@ -1,0 +1,183 @@
+/* #355C7D  #725A7A C56D86 FF7582 */
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #355C7D;
+    display: grid;
+    column-gap: 200px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    
+}
+
+#container{
+    position: relative;
+    height: 600px;
+    width: 500px;
+    margin-left: 35%;
+    border: 2px solid darkblue;
+    background-color: #FF7582;
+    overflow: hidden;
+}
+
+.contols{
+    margin-top: 100px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center; 
+    position: relative;
+    height: 600px;
+    width: 450px;
+}
+#conTitle{
+    text-align: center;
+    margin: 10px 20px;
+    padding: 5px 10px;
+    color:  rgb(77, 32, 32);
+    background-color:  #FF7582; ;
+    border-radius: 10px;
+}
+
+.playerContol{
+    color: #5e303d;
+    background-color: rgb(229, 152, 152);
+    border-radius: 10px;
+    font-size: 25px;
+    height: 200px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;  
+}
+
+.sm{
+    font-size: .8em; 
+}
+
+/* arrow keys */
+span{
+    font-size:50px;
+    transform: scale(1.5, 1.5);
+}
+
+#as{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.speedInfo{
+    text-align: center;
+    width: 430px;
+    margin-top: 10px;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    color:  rgb(77, 32, 32);
+    background-color:  rgb(229, 152, 152); ;
+    border-radius: 10px;
+
+}
+
+    
+#ball{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #5e303d;
+    border-radius: 25px;
+    
+}
+
+.paddle{
+    position: absolute;
+    height: 20px;
+    width: 150px;
+    color:  rgb(77, 32, 32);
+    background-color: #725A7A;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: solid;
+    left: 40%;
+    
+}
+
+#paddle_1{
+    bottom: 0;
+    
+}
+#paddle_2{
+    top: 0;
+
+}
+
+#winner{
+    color: #725A7A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 20%;
+}
+#gameName{
+    color: #725A7A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 20%;
+}
+#restart_div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(229, 152, 152);
+    color: white;
+  
+    text-align: center;
+    display: none;
+
+}
+#start_div{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(229, 152, 152);
+    color: white;
+    text-align: center;
+}
+#start:hover{
+    cursor: pointer;
+    color:  rgb(22, 134, 134); 
+    background-color: rgb(77, 32, 32);
+}
+
+#restart{
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: icon;
+    font-size: larger;
+    margin-top: 15%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #FF7582;
+    background-color: #355C7D;
+   
+}
+#start{
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: icon;
+    font-size: larger;
+    margin-top: 15%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #FF7582;
+    background-color: #355C7D;
+   
+}
+
+#restart:hover{
+    cursor: pointer;
+    color:  rgb(22, 134, 134); 
+    background-color: rgb(77, 32, 32);
+   
+}

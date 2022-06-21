@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="container">
+    
+        <div id="ball" style="top: 30%; left: 50%;"></div>
+        <div id="paddle_1" class="paddle">Player 1</div>
+        <div id="paddle_2" class="paddle">Player 2</div>
+        <div id="restart_div">
+            <p id="winner"> </p>
+            <button id="restart">Restart</button>
+        </div>
+        <div id="start_div">
+            <p id="gameName">2 Player Ping-Pong</p>
+            <button id="start">Start</button>
+        </div>
+    </div>
+    <div class="contols">
+        <h2 id="conTitle">Game Controls:</h2>
+        <div class="playerContol">
+            <div class="grid-item">Player 1</div>
+            <div class="grid-item arrow"><span class="material-symbols-outlined">
+                west
+                </span> </div>
+            <div class="grid-item arrow"><span class="material-symbols-outlined">
+                east
+                </span></div>
+            <div class="grid-item"></div>
+            <div class="grid-item sm">Move Left</div>
+            <div class="grid-item sm">Move Right</div>
+            <div class="grid-item">Player 2</div>
+            <div id="as" class="grid-item">A</div>
+            <div id="as" class="grid-item">S</div>
+        </div>
+        <div class="gameControl">
 
+        </div>
+        <div class="sound">
+
+        </div>
+        <div class="speedInfo">
+            Strike from left/right side of the paddle to boost the speed
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+</body>
+</html>
